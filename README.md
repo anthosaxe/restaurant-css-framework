@@ -1,5 +1,5 @@
 # restaurant-css-framework-cdn 
-[link to website](https://anthosaxe.github.io/restaurant-css-framework/)
+<a href="https://anthosaxe.github.io/restaurant-css-framework/" target="_blank">link to website</a>
 
 ## pages
 this website contains 5 pages, index in the main folder and 4 in ./src/html/
