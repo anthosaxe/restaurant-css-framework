@@ -8,9 +8,9 @@
     <title>Contact</title>
 </head>
 
-<body class="bg-blue-900">
+<body class="bg-orange-700">
     <header>
-        <div class="bg-blue-500 grid sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 p-2">
+        <div class="bg-black grid sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 p-2">
             <div class="col-span-1 flex justify-center">
                 <img class="w-5 mr-1" src="../images/globe-solid.svg" alt="r-logo">
                 <a class="font-bold text-xl text-white" href="../../index.html">
@@ -46,36 +46,38 @@
             </div>
         </div>
     </header>
-    <div class="text-white flex justify-center min-h-full pt-5">
-        <form action="/submit-form" method="post">
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="last-name">Last Name :</label>
-                <input class="rounded-lg" type="text">
-            </div>
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="first-name">First Name :</label>
-                <input class="rounded-lg" type="text">
-            </div>
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="mail">E-mail :</label>
-                <input class="rounded-lg" type="text">
-            </div>
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="subject">Subject :</label>
-                <select class="text-black rounded-lg text-center" name="" id="">
-                    <option value="">La bouffe</option>
-                    <option value="">Le Personnel</option>
-                    <option value="">collaboration</option>
-                </select>
-            </div>
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="message">Message :</label>
-                <input class="rounded-lg h-32" type="text">
-            </div>
-            <button class="p-4 mt-5 font-bold border-4 rounded-lg w-full">
-                Send
-            </button>
-        </form>
+    <div class="xl:mx-60">
+        <div class="text-white flex justify-center min-h-full pt-5">
+            <form action="/submit-form" method="post">
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold" for="last-name">Last Name :</label>
+                    <input class="rounded-lg" type="text">
+                </div>
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold" for="first-name">First Name :</label>
+                    <input class="rounded-lg" type="text">
+                </div>
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold" for="mail">E-mail :</label>
+                    <input class="rounded-lg" type="text">
+                </div>
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold" for="subject">Subject :</label>
+                    <select class="text-black rounded-lg text-center" name="" id="">
+                        <option value="">La bouffe</option>
+                        <option value="">Le Personnel</option>
+                        <option value="">collaboration</option>
+                    </select>
+                </div>
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold" for="message">Message :</label>
+                    <input class="rounded-lg h-32" type="text">
+                </div>
+                <button class="p-4 mt-5 font-bold border-4 rounded-lg w-full">
+                    Send
+                </button>
+            </form>
+        </div>
     </div>
 </body>
 
