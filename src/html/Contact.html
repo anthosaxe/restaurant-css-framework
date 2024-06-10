@@ -9,48 +9,48 @@
 </head>
 
 <body class="bg-orange-700">
-  <header>
-    <div class="bg-black grid sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 p-2">
-        <div class="col-span-1 flex justify-center">
-            <a class="font-bold text-xl text-white" href="../../index.html">
-                Welcome
-            </a>
+    <header>
+        <div class="bg-black grid sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 p-2">
+            <div class="col-span-1 flex justify-center">
+                <a class="font-bold text-xl text-white" href="../../index.html">
+                    Welcome
+                </a>
+            </div>
+            <div class="col-span-1 flex justify-center">
+                <a class="font-bold text-xl text-white" href="Menu.html">
+                    Menu
+                </a>
+            </div>
+            <div class="col-span-1 flex justify-center">
+                <a class="font-bold text-xl text-white" href="Pictures.html">
+                    Pictures
+                </a>
+            </div>
+            <div class="col-span-1 flex justify-center">
+                <a class="font-bold text-xl text-white" href="Restaurant.html">
+                    Restaurant
+                </a>
+            </div>
         </div>
-        <div class="col-span-1 flex justify-center">
-            <a class="font-bold text-xl text-white" href="Menu.html">
-                Menu
-            </a>
-        </div>
-        <div class="col-span-1 flex justify-center">
-            <a class="font-bold text-xl text-white" href="Pictures.html">
-                Pictures
-            </a>
-        </div>
-        <div class="col-span-1 flex justify-center">
-            <a class="font-bold text-xl text-white" href="Restaurant.html">
-                Restaurant
-            </a>
-        </div>
-    </div>
-</header>
-      <div class="xl:mx-60 2xl:mx-96">
+    </header>
+    <div class="xl:mx-60 2xl:mx-96">
         <div class="text-white flex justify-center min-h-full pt-5">
-            <form action="/submit-form" method="post">
+            <form action="/submit-form" method="post" id="myForm">
                 <div class="p-2 grid grid-cols-2">
                     <label class="font-bold text-black" for="last-name">Last Name :</label>
-                    <input class="rounded-lg" type="text">
+                    <textarea id="last-name" class="rounded-lg text-black" placeholder="your last name"></textarea>
                 </div>
                 <div class="p-2 grid grid-cols-2">
                     <label class="font-bold text-black" for="first-name">First Name :</label>
-                    <input class="rounded-lg" type="text">
+                    <textarea id="first-name" class="rounded-lg text-black" placeholder="your first name"></textarea>
                 </div>
                 <div class="p-2 grid grid-cols-2">
                     <label class="font-bold  text-black" for="mail">E-mail :</label>
-                    <input class="rounded-lg" type="text">
+                    <textarea id="mail" class="rounded-lg text-black" placeholder="your e-mail"></textarea>
                 </div>
                 <div class="p-2 grid grid-cols-2">
                     <label class="font-bold text-black" for="subject">Subject :</label>
-                    <select class="text-black rounded-lg text-center" name="" id="">
+                    <select class="text-black rounded-lg text-center" name="" id="subject">
                         <option value="">La bouffe</option>
                         <option value="">Le Personnel</option>
                         <option value="">collaboration</option>
@@ -58,14 +58,27 @@
                 </div>
                 <div class="p-2 grid grid-cols-2">
                     <label class="font-bold text-black" for="message">Message :</label>
-                    <input class="rounded-lg h-32 text-black" type="text">
+                    <textarea id="message" class="rounded-lg h-32 text-black" placeholder="your message"></textarea>
                 </div>
-                <button class="p-4 mt-5 font-bold border-4 rounded-lg border-black w-full text-black bg-red-800">
-                    <a href="https://cheh.com">Send</a>
+                <button type="submit" id="submit" class="p-4 mt-5 font-bold border-4 rounded-lg border-black w-full text-black bg-red-800">
+                    <a href="">Send</a>
                 </button>
             </form>
+
+        </div>
+
+        <div class="result-container" id="result">
+                
         </div>
     </div>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function() {
+            event.preventDefault(); 
+            alert('Formulaire envoyé');
+            document.getElementById('myForm').reset(); 
+        });
+    </script>
 </body>
 
 </html>
